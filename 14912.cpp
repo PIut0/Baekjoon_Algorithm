@@ -12,5 +12,6 @@ int main() {
         cnt++;
     }
   }
+  
   printf("%d",cnt);
 }
