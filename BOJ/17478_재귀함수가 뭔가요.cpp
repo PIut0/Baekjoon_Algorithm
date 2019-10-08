@@ -5,6 +5,7 @@ using namespace std;
 #define INF 1234567890
 #define ll long long int
 
+int n;
 void Indent(int k){
     for(int i=0;i<k*4;i++){
         printf("_");
@@ -12,12 +13,29 @@ void Indent(int k){
 }
 
 void WhatIsRecursionFunction(int c){
-    printf("\"ìž¬ê·€í•¨ìˆ˜ê°€ ë­”ê°€ìš”?\"");
+    Indent(c);
+    printf("\"Àç±ÍÇÔ¼ö°¡ ¹º°¡¿ä?\"\n");
+    
+    if(c == n){
+        Indent(c);
+        printf("\"Àç±ÍÇÔ¼ö´Â ÀÚ±â ÀÚ½ÅÀ» È£ÃâÇÏ´Â ÇÔ¼ö¶ó³×\"\n");
+        Indent(c);
+        printf("¶ó°í ´äº¯ÇÏ¿´Áö.\n");
+        return;
+    }
+    Indent(c);
+    printf("\"Àß µé¾îº¸°Ô. ¿¾³¯¿¾³¯ ÇÑ »ê ²À´ë±â¿¡ ÀÌ¼¼»ó ¸ðµç Áö½ÄÀ» Åë´ÞÇÑ ¼±ÀÎÀÌ ÀÖ¾ú¾î.\n");
+    Indent(c);
+    printf("¸¶À» »ç¶÷µéÀº ¸ðµÎ ±× ¼±ÀÎ¿¡°Ô ¼ö¸¹Àº Áú¹®À» Çß°í, ¸ðµÎ ÁöÇý·Ó°Ô ´ë´äÇØ ÁÖ¾úÁö.\n");
+    Indent(c);
+    printf("±×ÀÇ ´äÀº ´ëºÎºÐ ¿Ç¾Ò´Ù°í ÇÏ³×. ±×·±µ¥ ¾î´À ³¯, ±× ¼±ÀÎ¿¡°Ô ÇÑ ¼±ºñ°¡ Ã£¾Æ¿Í¼­ ¹°¾ú¾î.\"\n");
+    WhatIsRecursionFunction(c+1);
+    Indent(c);
+    printf("¶ó°í ´äº¯ÇÏ¿´Áö.\n");
 }
 
 int main(){
-    int n;
     scanf("%d",&n);
-    printf("ì–´ëŠ í•œ ì»´í“¨í„°ê³µí•™ê³¼ í•™ìƒì´ ìœ ëª…í•œ êµìˆ˜ë‹˜ì„ ì°¾ì•„ê°€ ë¬¼ì—ˆë‹¤.");
-
+    printf("¾î´À ÇÑ ÄÄÇ»ÅÍ°øÇÐ°ú ÇÐ»ýÀÌ À¯¸íÇÑ ±³¼ö´ÔÀ» Ã£¾Æ°¡ ¹°¾ú´Ù.\n");
+    WhatIsRecursionFunction(0);
 }
