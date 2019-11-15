@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+<<<<<<< HEAD
 #define mp make_pair
 #define pb push_back
 using namespace std;
@@ -50,4 +51,10 @@ int main(){
         }
     }
     printf("%d",x);
+=======
+using namespace std;
+
+int main(){
+
+>>>>>>> 7b05050ad0b0b95573be0720202b59cf617093cb
 }
