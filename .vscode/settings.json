@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "utility": "cpp",
+        "random": "cpp",
+        "iosfwd": "cpp",
+        "regex": "cpp",
+        "xlocale": "cpp",
+        "xstring": "cpp"
+    }
+}
