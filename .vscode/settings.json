@@ -5,6 +5,7 @@
         "iosfwd": "cpp",
         "regex": "cpp",
         "xlocale": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "algorithm": "cpp"
     }
 }
